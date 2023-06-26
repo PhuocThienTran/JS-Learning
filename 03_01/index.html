@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Objects Intro</title>
+    <style>
+      .relationship-section {
+        border-top: 1px solid black;
+        padding-top: 20px;
+        margin-top: 20px;
+        font-size: 16px;
+        font-family: Arial, sans-serif;
+      }
+    </style>
+    <script src="backpack.js"></script>
+  </head>
+  <body>
+    <h1>JS Objects Intro</h1>
+    <p>
+      Object: An object has many identifiable properties. However, between
+      similar objects, they can share common properties, and this describes the
+      prototype of an object. For example, a backpack can have different colors,
+      sizes, and width (all unique identifiable properties), but between
+      multiple backpacks, they have 2 straps, a flat back area, and an opening
+      at the top (shared properties that describe the prototype of an object).
+    </p>
+    <hr />
+    <p>
+      Objects can have features built into them to change properties' values.
+      For example, a backpack can be opened differently using a lid or a zipper
+      (considered as features). In JavaScript, these features are methods
+      (property-changing features inside objects). Methods only act upon the
+      current object. For example, opening a backpack with a zipper doesn't
+      change how another backpack is being opened with a button.
+    </p>
+    <hr />
+    <p>
+      Objects can contain other objects. For example, a pen can be inside a
+      backpack. In this case, the pen is seen as a property of the backpack
+      object for as long as it's in there. The pen can have different sets of
+      properties and methods and is a unique and separate object. It can be
+      included inside another object or be separated. There can be one or many
+      pens, and changing one does not change the others.
+    </p>
+
+    <!-- Relationship Statements -->
+    <section class="relationship-section" id="relationship-section">
+      <h2>Relationship Statements</h2>
+      <p>The backpack has the following properties:</p>
+      <ul id="backpack-properties"></ul>
+      <p>Example: Opening the backpack...</p>
+      <p id="opening-statement"></p>
+      <p>Example: Closing the backpack...</p>
+      <p id="closing-statement"></p>
+      <p>The backpack can contain other objects, like a pen.</p>
+      <p id="pen-statement"></p>
+    </section>
+  </body>
+</html>
