@@ -23,6 +23,6 @@ const backpack = {
     this.strapLength.right = lengthRight;
     updateBackpack(`Strap lengths updated.`);
   },
-};
+}; // declaration of the backpack entity (in this case an obj)
 
-export default backpack;
+export default backpack; // export the backpack obj and use it in any place that imports the obj
