@@ -32,15 +32,15 @@ let backpack = {
   lidOpen: false,
   /**
    * method determining if backpack is open or not
-   * @param {boolean} lidStatus 
+   * @param {boolean} lidStatus
    */
   toggleLid: function (lidStatus) {
     this.lidOpen = lidStatus;
   },
   /**
    * method changing how long the strap lengths are
-   * @param {value} lengthLeft 
-   * @param {value} lengthRight 
+   * @param {value} lengthLeft
+   * @param {value} lengthRight
    */
   newStrapLength: function (lengthLeft, lengthRight) {
     this.strapLength.left = lengthLeft;
