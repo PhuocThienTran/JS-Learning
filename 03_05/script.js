@@ -8,7 +8,7 @@ const backpack = {
   color: "grey",
   pocketNum: 15,
   strapLength: {
-    left: 26,
+    left: 30,
     right: 26,
   },
   lidOpen: false,
@@ -20,3 +20,6 @@ const backpack = {
     this.strapLength.right = lengthRight;
   },
 };
+
+console.log("Backpack's right strap:", backpack.strapLength.right + "cm", 
+            "Backpack's left strap:", backpack.strapLength.left + "cm")
