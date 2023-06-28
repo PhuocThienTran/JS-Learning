@@ -1,4 +1,8 @@
 /**
+ * Object's properties always come with key/value pair
+ */
+
+/**
  * Create a Backpack object.
  */
 
