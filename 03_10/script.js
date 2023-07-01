@@ -4,15 +4,24 @@
  */
 import Backpack from "./Backpack.js";
 
-const everydayPack = new Backpack(
-  "Everyday Backpack",
-  30,
-  "grey",
+let greenBackpack = new Backpack(
+  "Green Backpack",
+  35,
+  "green",
   15,
-  26,
-  26,
+  23,
+  23,
   false
 );
 
-console.log("The everydayPack object:", everydayPack);
-console.log("The pocketNum value:", everydayPack.pocketNum);
+let bluebBackpack = new Backpack(
+  "Blue Backpack",
+  75,
+  "blue",
+  20,
+  19,
+  19,
+  false
+);
+
+console.log(greenBackpack, bluebBackpack);
