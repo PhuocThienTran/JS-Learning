@@ -1,4 +1,16 @@
 /**
+Then how objects can be created from a class is called:
+import Backpack from'./Backpack.js';
+let greenBackpack = new Backpack(
+  ...
+);
+let bluebBackpack = new Backpack(
+  ...
+);
+console.log(greenbackpack, bluebackpack)
+ */
+
+/**
  * Create a class for the Backpack object type.
  * @link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes
  */
