@@ -23,4 +23,18 @@ const backpack = {
     this.strapLength.left = lengthLeft;
     this.strapLength.right = lengthRight;
   },
+  modifyBackpackProperties: function(
+    updateName, 
+    updateVolume, 
+    updateColor, 
+    updatePocketNum){
+      this.name = updateName;
+      this.volume = updateVolume;
+      this.color = updateColor;
+      this.pocketNum = updatePocketNum;
+  }
 };
+
+console.log("Old Backpack: ", backpack.name, backpack.volume, backpack.color, backpack.pocketNum);
+backpack.modifyBackpackProperties("New Backpack", 23, "black", 23)
+console.log("New Backpack: ", backpack.name, backpack.volume, backpack.color, backpack.pocketNum);
