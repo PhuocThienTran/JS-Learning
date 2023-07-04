@@ -4,6 +4,22 @@
  * @link https://developer.mozilla.org/en-US/docs/Web/API/Element/querySelectorAll
  */
 
+/**
+Accessing elements in DOM via JS's querySelector() and querySelectorAll(): 
+
+querySelector(): returns the first Element within the HTML document that matches the specified selector 
+or its group. For example: 
+domElement = document.querySelector("main") // returns the entire <main>...</main> tag 
+
+querySelectorAll(): returns a list of the document's elements that match the specified group of selectors. 
+For example: domElement = document.querySelectorAll("ul li") // returns all the unordered list items. 
+
+They use CSS queries to look through the DOM tree and find the specified elements. As a result, 
+they return a pure JS object. 
+The elements can be anything including a class - i.e.: document.querySelector(".backpack__color"). 
+These methods allow access to any elements in the DOM and modify them.
+ */
+
 import Backpack from "./Backpack.js";
 
 const everydayPack = new Backpack(
