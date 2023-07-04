@@ -1,5 +1,3 @@
-// Backpack.js
-
 class Backpack {
     constructor(id, image, name, volume, color, age, pockets, leftStrapLength, rightStrapLength, lidStatus) {
       this.id = id;

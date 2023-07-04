@@ -1,12 +1,10 @@
 import backpacks from "./backpackObj.js";
 
-const backpacksContent = backpacks
-  .map(
-    (backpack) => `
-<article class="backpack" id="${backpack.id}">
-    <figure class="backpack__image">
-        <img src="../../assets/images/${backpack.image}.svg" alt="" loading="lazy" />
-    </figure>
+const backpacksContent = backpacks.map((backpack) => `
+    <article class="backpack" id="${backpack.id}">
+        <figure class="backpack__image">
+            <img src="../../assets/images/${backpack.image}.svg" alt="" loading="lazy" />
+        </figure>
         <h1 class="backpack__name">${backpack.name}</h1>
         <ul class="backpack__features">
             <li class="feature backpack__volume">Volume:<span> ${backpack.volume}</span></li>
@@ -30,10 +28,8 @@ const backpacksContent = backpacks
             <li class="feature backpack__lid">Lid status: <span>${backpack.lidStatus}</span></li>
         </ul>
         <button class="lid-toggle">Open lid</button>
-</article>
-`
-  )
-  .join("");
+    </article>
+`).join("");
 
 document.querySelector(".maincontent").innerHTML += backpacksContent;
 document.querySelectorAll(".backpack__features").forEach((backpackFeatures) => {
