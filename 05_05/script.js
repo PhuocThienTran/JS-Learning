@@ -1,4 +1,18 @@
 /**
+Class manipulation or modifying. Examples can be used in: moving onto the next steps after previous 
+steps through highlighting a button, hiding/showing a panel. There are two ways of class manipulation:
+
+Element.classList: Returns a list of classes being appended to an element. 
+There are a few associated methods, for example: 
+  Adding a new class: document.querySelector("main li:first-child").classList.add("new__class");
+  Removing a class: document.querySelector("main li:first-child").classList.remove("new__class");
+  Toggle a class: document.querySelector("main li:first-child").classList.toggle("new__class");
+    add the class if it's not there and remove a class if it's there.
+  Adding a new class: document.querySelector("main li:first-child").classList.replace("current_class", "new__class");
+    replace the current class with a new class.
+ */
+
+/**
  * Traverse the DOM tree using querySelector() and querySelectorAll()
  * @link https://developer.mozilla.org/en-US/docs/Web/API/Element/querySelector
  * @link https://developer.mozilla.org/en-US/docs/Web/API/Element/querySelectorAll
