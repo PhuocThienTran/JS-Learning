@@ -1,4 +1,18 @@
 /**
+Modifying the attributes of an elements using: 
+Element.attributes: document.QuerySelector("img").attributes 
+  returns the attributes of an <img> so like src and alt. To modify attributes: 
+  Has attributes: document.QuerySelector("img").hasAttributes("h1") 
+    returns a false because a <img> doesn't have a h1 attribute. 
+  Get attributes: document.QuerySelector("img").getAttributes("src")
+    returns the value of the attribute of "src". 
+  Set attributes: document.QuerySelector("img").setAttributes("alt", "Backpack")
+    append the value to the attribute.
+  Remove attributes: document.QuerySelector("img").removeAttributes("alt")
+    remove the alt attribute 
+ */
+
+/**
  * Traverse the DOM tree using querySelector() and querySelectorAll()
  * @link https://developer.mozilla.org/en-US/docs/Web/API/Element/querySelector
  * @link https://developer.mozilla.org/en-US/docs/Web/API/Element/querySelectorAll
