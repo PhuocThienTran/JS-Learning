@@ -1,4 +1,14 @@
 /**
+Modifying inline CSS styles for an element:
+  Get styles: document.querySelector(".site-title").style
+    returns the list of possible CSS styles that are and could be applicable to
+    the site-title class
+  Set styles: document.querySelector("site-title").style.color = "purple"
+    sets the color of the site-title class from black to purple.
+    Also sets the color of the site-title class from empty to purple if there is nothing set
+ */
+
+/**
  * Traverse the DOM tree using querySelector() and querySelectorAll()
  * @link https://developer.mozilla.org/en-US/docs/Web/API/Element/querySelector
  * @link https://developer.mozilla.org/en-US/docs/Web/API/Element/querySelectorAll
