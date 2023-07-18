@@ -1,4 +1,9 @@
 /**
+When to use:
+  Let: When using a changeable or mutable variable. Including when using it in a global scope.
+  Var: Only a mutual variable that is only for global scope all the time.
+ */
+/**
  * The let statement
  * @link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let
  */
