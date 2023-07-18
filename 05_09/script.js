@@ -1,4 +1,18 @@
 /**
+Add DOM elements: creates new HTML element specified by tagName.
+  const newArticle = document.createElement("article") // setting the article tag for the property
+  newArticle.classList.add("backpack") // assigning the class name to the newArticle property
+  newArticle.setAttribute("id", "everyday") // assigning the everyday value to the id property
+  // basically the upper code does <article class="backpack" id="everyday">
+
+  newArticle.innerHTML = content // assign the newArticle html into the content property
+  main.append(newAritcle) // append newArticle into the main tag after the page-header div in the html
+
+  main.prepend(newArticle) // append newArtcile before the page-header div in the html
+
+ */
+
+/**
  * Traverse the DOM tree using querySelector() and querySelectorAll()
  * @link https://developer.mozilla.org/en-US/docs/Web/API/Element/querySelector
  * @link https://developer.mozilla.org/en-US/docs/Web/API/Element/querySelectorAll
