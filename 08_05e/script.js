@@ -1,3 +1,10 @@
+/*
+If there is a function that is a method inside an object, 
+don't use the arrow function for that function that is a method. 
+Instead, declare it as a function expression. However, the arrow function can 
+be used as a nested arrow function inside that method that is a function. 
+*/
+
 /**
  * How arrow functions help us with scoping.
  * @link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions#this_and_Arrow_Functions
