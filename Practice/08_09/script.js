@@ -33,6 +33,32 @@ const frogpack = {
   },
 };
 
+function createArticleWithContent(content) {
+  // *  - Creates new <article> element
+  const article = document.createElement('article');
+  // *  - Populates <article> with content (see const content below)
+  article.innerHTML = content;
+  // *  - Returns <article> element to where function is called
+  return article;
+}
+
+function createImageFigure(imageUrl, imageDescription) {
+  // *  - Creates new <figure> element
+  const figure = document.createElement('figure');
+  // *  - Adds <img> markup pointing to frogpack.image
+  const image = document.createElement('img');
+  image.src = imageUrl;
+  // *  - Adds <figcaption> element with image description
+  const figcaption = document.createElement('figcaption');
+  figcaption.textContent = imageDescription;
+  figure.appendChild(image);
+  figure.appendChild(figcaption);
+  // *  - Returns <figure> element to where function is called
+  return figure;
+}
+
+
+
 // Baseline HTML output
 const content = `
     <h1 class="backpack__name">${frogpack.name}</h1>
@@ -57,3 +83,14 @@ const content = `
       }</span></li>
     </ul>  
 `;
+
+document.addEventListener('DOMContentLoaded', () => {
+  const mainElement = document.querySelector('main');
+  
+  const article = createArticleWithContent(content);
+  const imageFigure = createImageFigure(frogpack.image, 'Frog Backpack Image');
+  
+  mainElement.appendChild(article);
+  mainElement.appendChild(imageFigure);
+});
+
