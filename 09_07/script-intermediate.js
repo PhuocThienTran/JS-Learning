@@ -55,6 +55,33 @@ const newStrapLength = (strapArray) => {
 
     // Add form to the end of the list element
     listElement.append(lengthForm);
+
+    /**
+      EVENT LISTENER 
+     */
+
+    // event listener submit to the 4 different forms for length. Which is being appended in listElement as an element of the strapArray
+    lengthForm.addEventListener("submit", (event) => {
+      event.preventDefault(); // Prevent the default behavior of the button being clicked with the submit event
+      const input = lengthForm.querySelector("input");
+      const newLength = parseFloat(input.value); // get the float (decimal) value of length being inputted via input
+      const backpackId = listElement.closest(".backpack").getAttribute("id"); // assign the id to backpackId via finding the closest class with the name .backpack in the DOM
+      const backpackObject = backpackObjectArray.find(
+        ({ id }) => id === backpackId
+      );
+
+      // take the side variable in line 44 and check it against the direction
+      if (side === "left") {
+        backpackObject.strapLength.left = newLength; // assign the backpackObj's direction with the inputted value
+      } else if (side === "right") {
+        backpackObject.strapLength.right = newLength;
+      }
+
+      const lengthSpan = listElement.querySelector("span");
+      lengthSpan.innerText = `${newLength} inches`; // assign the inputted value into the targeted span
+
+      input.value = ""; // reset input area after inputting in the value 
+    });
   });
 };
 
